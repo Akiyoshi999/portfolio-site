@@ -1,5 +1,5 @@
 import { alpha, createTheme } from "@mui/material";
-import { amber, orange, red } from "@mui/material/colors";
+import { amber, grey, orange, red } from "@mui/material/colors";
 
 const navTheme = createTheme({
   typography: {
@@ -9,7 +9,6 @@ const navTheme = createTheme({
     mode: "light",
     // primary: {
     //   main: "#311b92",
-    // main: red[500],
     // },
     orange700: {
       // main: amber[700],
