@@ -1,11 +1,5 @@
-import { Box } from "@mui/system";
-import { useRouter } from "next/router";
+import TopCotainer from "../components/layout/TopCotainer";
 
-export default function Profile() {
-  const router = useRouter();
-  return (
-    <div>
-      <a>{router.pathname} Page</a>
-    </div>
-  );
+export default function Top() {
+  return <TopCotainer />;
 }
