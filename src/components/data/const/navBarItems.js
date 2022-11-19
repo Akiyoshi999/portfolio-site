@@ -24,9 +24,9 @@ const NavBarItems = [
     content: "スキル",
     route: "",
     subContents: [
-      { subContent: "成果物", subIcon: <ComputerIcon /> },
-      { subContent: "スキル", subIcon: <ConstructionIcon /> },
-      { subContent: "資格", subIcon: <CardMembershipIcon /> },
+      { subContent: "成果物", subIcon: <ComputerIcon />, route: "/skill" },
+      { subContent: "スキル", subIcon: <ConstructionIcon />, route: "/skill" },
+      { subContent: "資格", subIcon: <CardMembershipIcon />, route: "/skill" },
     ],
   },
   {

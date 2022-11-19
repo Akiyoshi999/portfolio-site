@@ -6,11 +6,11 @@ import {
 } from "@mui/material";
 import React from "react";
 
-const MobileNavSubMenuItem = ({ subIcon, subContent }) => {
+const MobileNavSubMenuItem = ({ subIcon, subContent, route }) => {
   return (
     <>
       <ListItem>
-        <ListItemButton>
+        <ListItemButton href={route}>
           <ListItemIcon>{subIcon}</ListItemIcon>
           <ListItemText primary={subContent} />
         </ListItemButton>
