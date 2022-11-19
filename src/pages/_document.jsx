@@ -27,7 +27,7 @@ export default function Document() {
 
         {/* Google Fonts */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Poor+Story&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Concert+One&family=Kaisei+Decol:wght@700&family=Poor+Story&display=swap"
           rel="stylesheet"
         ></link>
       </Head>

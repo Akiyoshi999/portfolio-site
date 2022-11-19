@@ -41,7 +41,7 @@ export default function MobileHeader() {
           flexGrow: 1,
           display: {
             xs: "flex",
-            sm: "none",
+            md: "none",
           },
         }}
       >

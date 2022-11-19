@@ -9,7 +9,7 @@ export default function TabletHeader() {
       spacing={2}
       position="relative"
       color="orange700"
-      sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" } }}
+      sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
     >
       <Toolbar sx={{ maxWidth: "xl", height: "64px" }}>
         <Box
