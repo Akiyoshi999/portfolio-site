@@ -1,10 +1,4 @@
-import {
-  Button,
-  Link,
-  ListItemIcon,
-  MenuItem,
-  Typography,
-} from "@mui/material";
+import { Link, ListItemIcon } from "@mui/material";
 import React from "react";
 
 const TabletSubMenuItem = (props) => {

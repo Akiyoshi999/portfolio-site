@@ -6,6 +6,7 @@ import {
   Drawer,
   Grid,
   IconButton,
+  Link,
   Toolbar,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -60,11 +61,13 @@ export default function MobileHeader() {
               justifyContent="center"
               sx={{ height: "100%", mt: 1 }}
             >
-              <Box
-                component="img"
-                src="/images/logo.png"
-                sx={{ height: "62px", width: "62px" }}
-              />
+              <Link href="/">
+                <Box
+                  component="img"
+                  src="/images/logo.png"
+                  sx={{ height: "62px", width: "62px" }}
+                />
+              </Link>
             </Grid>
           </Toolbar>
         </Container>
