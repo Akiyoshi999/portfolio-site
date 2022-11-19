@@ -1,11 +1,19 @@
-import { ListItemIcon, MenuItem, Typography } from "@mui/material";
+import {
+  Button,
+  Link,
+  ListItemIcon,
+  MenuItem,
+  Typography,
+} from "@mui/material";
 import React from "react";
 
 const TabletSubMenuItem = (props) => {
   return (
     <>
       <ListItemIcon>{props.subIcon}</ListItemIcon>
-      <Typography>{props.subContent}</Typography>
+      <Link href={props.route} sx={{ color: "black", textDecoration: "none" }}>
+        {props.subContent}
+      </Link>
     </>
   );
 };
