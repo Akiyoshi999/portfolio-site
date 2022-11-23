@@ -1,10 +1,5 @@
-import { useRouter } from "next/router";
+import Skill from "../../components/pages/Skill";
 
 export default function Profile() {
-  const router = useRouter();
-  return (
-    <div>
-      <a>{router.pathname} Page</a>
-    </div>
-  );
+  return <Skill />;
 }
