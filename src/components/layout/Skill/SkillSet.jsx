@@ -10,16 +10,13 @@ import {
   skillDesc,
   skillDescHead,
 } from "../../data/const/skillItems";
+import SectionBox from "../../ui/Section/SectionBox";
 import SectionTitle from "../../ui/Section/SectionTitle";
 import TableItems from "../../ui/table/TableItems";
 
 const SkillSet = () => {
   return (
-    <Box
-      id="my-skill-set"
-      backgroundColor="blue"
-      sx={{ py: 2, width: "80%", margin: "0 auto" }}
-    >
+    <SectionBox id="my-skill-set" backgroundColor="blue">
       <Box className="skill-desc" textAlign="center">
         <SectionTitle>My Skill Set</SectionTitle>
         <Typography variant="body">
@@ -50,9 +47,8 @@ const SkillSet = () => {
             <TableItems head={cerfHead} body={certification} />
           </Grid>
         </Grid>
-        <br />
       </Box>
-    </Box>
+    </SectionBox>
   );
 };
 
