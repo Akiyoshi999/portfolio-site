@@ -1,5 +1,5 @@
-import TopCotainer from "../components/layout/TopCotainer";
+import Home from "../components/pages/Home";
 
 export default function Top() {
-  return <TopCotainer />;
+  return <Home />;
 }

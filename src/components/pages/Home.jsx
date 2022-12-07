@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import TopConCatchCopy from "../TopCon/TopConCatchCopy";
 import TopConImage from "../TopCon/TopConImage";
 
-const TopCotainer = () => {
+const Home = () => {
   const { ref, inView } = useInView({
     rootMargin: "-64px",
     triggerOnce: "true",
@@ -51,4 +51,4 @@ const TopCotainer = () => {
   );
 };
 
-export default TopCotainer;
+export default Home;
