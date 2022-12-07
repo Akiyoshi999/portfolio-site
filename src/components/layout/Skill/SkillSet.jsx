@@ -16,18 +16,13 @@ import TableItems from "../../ui/table/TableItems";
 
 const SkillSet = () => {
   return (
-    <SectionBox id="my-skill-set" backgroundColor="blue">
+    <SectionBox id="my-skill-set" backgroundColor="gray">
       <Box className="skill-desc" textAlign="center">
         <SectionTitle>My Skill Set</SectionTitle>
         <Typography variant="body">
           修練のすえ身につけたスキルをグラフィカルにまとめました。広く浅くではありますがフロントからバックエンドまで幅広くスキルアップに取り組んできました。オールラウンドに対応できる点が強みですが、全体的に理解が浅く、専門性の低さを認識しています。今後はバックエンド系の開発（クラウド含む）の業務に携わる比率を増やし、少しずつ専門性を高めていきたいと考えています。
         </Typography>
-        <Box
-          mt={5}
-          component={Paper}
-          // sx={{ width: "80%", margin: "0 auto" }}
-          // alignItems="center"
-        >
+        <Box mt={5} component={Paper}>
           <TableItems head={skillDescHead} body={skillDesc} />
         </Box>
         <Grid container rowSpacing={5} columnSpacing={5} px={1} py={5}>
