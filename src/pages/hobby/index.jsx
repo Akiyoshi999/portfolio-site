@@ -1,10 +1,7 @@
 import { useRouter } from "next/router";
+import Hobby from "../../components/pages/Hobby";
 
 export default function Profile() {
   const router = useRouter();
-  return (
-    <div>
-      <a>{router.pathname} Page</a>
-    </div>
-  );
+  return <Hobby />;
 }
