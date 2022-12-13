@@ -35,8 +35,8 @@ const NavBarItems = [
     content: "趣味",
     route: "",
     subContents: [
-      { subContent: "釣り", subIcon: <PhishingIcon /> },
-      { subContent: "ボードゲーム", subIcon: <CasinoIcon /> },
+      { subContent: "釣り", subIcon: <PhishingIcon />, route: "/hobby" },
+      { subContent: "ボードゲーム", subIcon: <CasinoIcon />, route: "/hobby" },
       ,
     ],
   },
