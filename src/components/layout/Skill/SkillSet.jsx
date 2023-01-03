@@ -9,7 +9,7 @@ import {
   frontSkills,
   skillDesc,
   skillDescHead,
-} from "../../data/const/skillItems";
+} from "../../../const/skillItems";
 import SectionBox from "../../ui/Section/SectionBox";
 import SectionTitle from "../../ui/Section/SectionTitle";
 import TableItems from "../../ui/table/TableItems";

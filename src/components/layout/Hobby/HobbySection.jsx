@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import React from "react";
-import { hobbySection } from "../../data/const/hobboItems";
+import { hobbySection } from "../../../const/hobbyItems";
 import HobbyItem from "../../Hobby/HobbyItem";
 import SectionBox from "../../ui/Section/SectionBox";
 import SectionTitle from "../../ui/Section/SectionTitle";

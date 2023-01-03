@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { careers } from "../../data/const/careerItems";
+import { careers } from "../../../const/careerItems";
 import CareerItem from "../../ui/Career/CareerItem";
 import SectionBox from "../../ui/Section/SectionBox";
 import SectionTitle from "../../ui/Section/SectionTitle";

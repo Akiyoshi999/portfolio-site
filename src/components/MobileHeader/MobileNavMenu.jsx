@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Divider } from "@mui/material";
-import NavBarItems from "../data/const/navBarItems";
+import NavBarItems from "../../const/navBarItems";
 import MobileNavMenuItem from "./MobileNavMenuItem";
 
 const MobileNavMenu = ({ anchor }) => {

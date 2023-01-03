@@ -1,10 +1,5 @@
-import { useRouter } from "next/router";
+import Contact from "../../components/pages/Contact";
 
-export default function Profile() {
-  const router = useRouter();
-  return (
-    <div>
-      <a>{router.pathname} Page</a>
-    </div>
-  );
-}
+export default () => {
+  return <Contact />;
+};
