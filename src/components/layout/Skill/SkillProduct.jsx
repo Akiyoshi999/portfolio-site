@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import { products } from "../../data/const/productItems";
+import { products } from "../../../const/productItems";
 import ProductCard from "../../ui/Card/ProductCard";
 import GridProduct from "../../ui/Grid/GridProduct";
 import SectionBox from "../../ui/Section/SectionBox";

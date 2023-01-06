@@ -1,7 +1,7 @@
 import Toolbar from "@mui/material/Toolbar";
 import { AppBar, Box, Link, Stack, Typography } from "@mui/material";
 import { TabletNavMenu } from "./TabletNavMenu";
-import navBarItems from "../data/const/navBarItems";
+import navBarItems from "../../const/navBarItems";
 
 export default function TabletHeader() {
   return (

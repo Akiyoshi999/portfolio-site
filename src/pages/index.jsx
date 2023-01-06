@@ -1,5 +1,5 @@
 import Home from "../components/pages/Home";
 
-export default function Top() {
+export default () => {
   return <Home />;
-}
+};

@@ -1,5 +1,5 @@
 import Skill from "../../components/pages/Skill";
 
-export default function Profile() {
+export default () => {
   return <Skill />;
-}
+};
