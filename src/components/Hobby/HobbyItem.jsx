@@ -1,11 +1,12 @@
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import ImageComponent from "../atoms/ImageComponent/ImageComponent";
 
 const HobbyItem = ({ title, img, content, evenInd }) => {
   const imgItem = (
     <Grid xs={5} item>
-      <Box component="img" src={img} sx={{ height: "auto", width: "100%" }} />
+      <ImageComponent src={img} sx={{ height: "auto", width: "100%" }} />
     </Grid>
   );
 

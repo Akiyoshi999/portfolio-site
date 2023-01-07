@@ -1,5 +1,5 @@
-import Home from "../components/pages/Home";
+import Top from "../components/pages/Top";
 
 export default () => {
-  return <Home />;
+  return <Top />;
 };
