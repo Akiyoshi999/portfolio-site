@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
-import ImageComponent from "../atoms/ImageComponent/ImageComponent";
+import ImageComponent from "../atoms/ImageComponent";
 
 const HobbyItem = ({ title, img, content, evenInd }) => {
   const imgItem = (

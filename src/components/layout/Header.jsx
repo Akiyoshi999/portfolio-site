@@ -1,5 +1,5 @@
 import MobileHeader from "../MobileHeader/MobileHeader";
-import TabletHeader from "../TabletHeader/TabletHeader";
+import TabletHeader from "../organisms/TabletHeader";
 
 export default function Header({ children }) {
   return (

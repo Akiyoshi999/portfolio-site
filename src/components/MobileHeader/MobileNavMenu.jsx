@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Divider } from "@mui/material";
-import NavBarItems from "../../const/navBarItems";
+import { navBarItems } from "../../const/navBarItems";
 import MobileNavMenuItem from "./MobileNavMenuItem";
 
 const MobileNavMenu = ({ anchor }) => {
@@ -11,7 +11,7 @@ const MobileNavMenu = ({ anchor }) => {
       // onClick={toggleDrawer(anchor, false)}
       // onKeyDown={toggleDrawer(anchor, false)}
     >
-      {NavBarItems.map((item) => (
+      {navBarItems.map((item) => (
         <MobileNavMenuItem key={item.content} {...item} />
       ))}
       <Divider />

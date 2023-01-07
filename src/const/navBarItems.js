@@ -15,7 +15,13 @@ import CasinoIcon from "@mui/icons-material/Casino";
 
 import EmailIcon from "@mui/icons-material/Email";
 
-const NavBarItems = [
+const navMain = {
+  title: "Akiyoshi Portfolio",
+  icon: "/images/logo.png",
+  topPath: "/",
+};
+
+const navBarItems = [
   { id: 0, icon: <HomeIcon />, content: "TOP", route: "/" },
   { id: 1, icon: <BadgeIcon />, content: "プロフィール", route: "/profile" },
   {
@@ -43,4 +49,4 @@ const NavBarItems = [
   { id: 4, icon: <EmailIcon />, content: "連絡先", route: "/contact" },
 ];
 
-export default NavBarItems;
+export { navMain, navBarItems };

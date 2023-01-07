@@ -3,7 +3,7 @@ import { Box } from "@mui/system";
 import { useInView } from "react-intersection-observer";
 import { topContent } from "../../../const/topItems";
 import AnimeTypography from "../../atoms/AnimeTypography";
-import ImageComponent from "../../atoms/ImageComponent/ImageComponent";
+import ImageComponent from "../../atoms/ImageComponent";
 
 const TopContainer = () => {
   const { ref, inView } = useInView({
