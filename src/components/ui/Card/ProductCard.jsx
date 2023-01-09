@@ -58,14 +58,14 @@ const ProductCard = (product) => {
         </CardActionArea>
       </Card>
 
-      {/* <Dialog
+      <Dialog
         open={open}
         keepMounted
         onClose={handleClose}
         TransitionComponent={Transition}
       >
         <DialogTitle>TEST Dialo</DialogTitle>
-      </Dialog> */}
+      </Dialog>
     </>
   );
 };

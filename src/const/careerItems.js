@@ -3,6 +3,7 @@ import MicIcon from "@mui/icons-material/Mic";
 import ComputerIcon from "@mui/icons-material/Computer";
 import ManageSearchIcon from "@mui/icons-material/ManageSearch";
 
+const careerSection = { title: "My Career", body: "" };
 const careers = [
   {
     date: { before: "2018-10", after: "2020-10" },
@@ -47,4 +48,4 @@ const careers = [
   },
 ];
 
-export { careers };
+export { careers, careerSection };

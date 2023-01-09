@@ -64,7 +64,7 @@ const ContactForm = () => {
           />
           <InputComponent
             control={control}
-            areaName="messeage"
+            areaName="message"
             label="お問い合わせ内容"
             type="text"
             multiline

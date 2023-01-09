@@ -1,21 +1,23 @@
 import { Typography } from "@mui/material";
-import { Box } from "@mui/system";
-import { careers } from "../../../const/careerItems";
-import CareerItem from "../../ui/Career/CareerItem";
+import { careers, careerSection } from "../../../const/careerItems";
+import CareerItem from "../../molecules/CareerItem";
 import SectionBox from "../../ui/Section/SectionBox";
 import SectionTitle from "../../ui/Section/SectionTitle";
 
 const SkillCareer = () => {
   return (
     <SectionBox id="skill-career" backgroundColor="silver">
-      <SectionTitle>My Career</SectionTitle>
-      <Typography variant="body"></Typography>
+      <SectionTitle>{careerSection.title}</SectionTitle>
+      <Typography variant="body">{careerSection.body}</Typography>
       {careers.map((career, ind) => {
         return (
           <CareerItem
-            career={career}
-            lastChildFlg={careers.length - 1 !== ind}
             key={career.title}
+            title={career.title}
+            contents={career.contents}
+            icon={career.icon}
+            date={career.date}
+            lastChildFlg={careers.length - 1 !== ind}
           />
         );
       })}
