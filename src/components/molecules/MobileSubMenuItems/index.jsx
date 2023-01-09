@@ -1,11 +1,10 @@
-import React from "react";
-import MobileNavSubMenuItem from "./MobileSubMenuItem";
+import MobileSubMenuItem from "../../atoms/MobileSubMenuItem";
 
 const MobileSubMenuItems = ({ subContents }) => {
   return (
     <>
       {subContents.map((item) => (
-        <MobileNavSubMenuItem key={item.subContent} {...item} />
+        <MobileSubMenuItem key={item.subContent} {...item} />
       ))}
     </>
   );

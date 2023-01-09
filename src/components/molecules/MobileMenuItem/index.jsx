@@ -6,11 +6,11 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import React from "react";
-import MobileSubMenuItems from "./MobileSubMenuItems";
+import { useState } from "react";
+import MobileSubMenuItems from "../MobileSubMenuItems";
 
-const MobileNavMenuItem = ({ icon, content, subContents, route = "" }) => {
-  const [subMenuopen, setSubMenuopen] = React.useState(false);
+const MobileMenuItem = ({ icon, content, subContents, route = "" }) => {
+  const [subMenuopen, setSubMenuopen] = useState(false);
   const handleSubMenuFlg = () => {
     setSubMenuopen(!subMenuopen);
   };
@@ -37,4 +37,4 @@ const MobileNavMenuItem = ({ icon, content, subContents, route = "" }) => {
   );
 };
 
-export default MobileNavMenuItem;
+export default MobileMenuItem;

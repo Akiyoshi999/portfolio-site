@@ -1,8 +1,15 @@
-// import "../styles/globals.scss";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "../const/muiSetting";
-import Header from "../components/layout/Header";
 import "../styles/globals.css";
+import MobileHeader from "../components/organisms/MobileHeader";
+import TabletHeader from "../components/organisms/TabletHeader";
+
+const Header = () => (
+  <>
+    <TabletHeader />
+    <MobileHeader />
+  </>
+);
 
 function MyApp({ Component, pageProps }) {
   return (
