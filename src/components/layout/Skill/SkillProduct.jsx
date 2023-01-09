@@ -10,10 +10,8 @@ import SectionTitle from "../../ui/Section/SectionTitle";
 const SkillProduct = () => {
   return (
     <SectionBox id="skill-artifact" backgroundColor="gray">
-      <Box textAlign="center">
-        <SectionTitle>My Product</SectionTitle>
-        <Typography variant="body"></Typography>
-      </Box>
+      <SectionTitle>My Product</SectionTitle>
+      <Typography variant="body"></Typography>
       <Grid
         container
         justifyContent="center"

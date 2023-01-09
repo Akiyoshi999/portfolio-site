@@ -5,7 +5,7 @@ import SectionTitle from "../../ui/Section/SectionTitle";
 import InputComponent from "../../atoms/InputComponent/InputComponent";
 import SlideAlert from "../../atoms/SlideAlert/SlideAlert";
 import { alerts, contactSection } from "../../../const/ContactItem";
-import { useContactForm } from "./useContactForm";
+import { useContactForm } from "./logic";
 import FormButton from "../../atoms/FormButton/FormButton";
 
 const ContactForm = () => {

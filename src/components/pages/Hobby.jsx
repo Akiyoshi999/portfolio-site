@@ -1,5 +1,5 @@
 import { Box } from "@mui/system";
-import HobbySection from "../layout/Hobby/HobbySection";
+import HobbySection from "../organisms/HobbySection";
 
 const Hobby = () => {
   return (

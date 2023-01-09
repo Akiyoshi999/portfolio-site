@@ -1,13 +1,16 @@
-import { Menu, Typography } from "@mui/material";
+import { Typography as MuiTypography } from "@mui/material";
 import { styled } from "@mui/system";
 
 const CustomMenu = (props) => (
-  <Typography
+  <MuiTypography
     variant="h3"
-    sx={{ mb: 5, fontFamily: ["Concert One", "cursive"].join(",") }}
+    sx={{
+      mb: 5,
+      fontFamily: ["Concert One", "cursive"].join(","),
+    }}
   >
     {props.children}
-  </Typography>
+  </MuiTypography>
 );
 
 export default styled(CustomMenu)({});

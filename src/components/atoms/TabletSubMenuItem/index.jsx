@@ -14,6 +14,7 @@ const Link = styled(MuiLink)(
 );
 
 const TabletSubMenuItem = ({ subIcon, route, subContent }) => {
+  console.log(subContent, route);
   return (
     <MenuItem>
       <ListItemIcon>{subIcon}</ListItemIcon>

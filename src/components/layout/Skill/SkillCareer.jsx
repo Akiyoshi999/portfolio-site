@@ -8,10 +8,8 @@ import SectionTitle from "../../ui/Section/SectionTitle";
 const SkillCareer = () => {
   return (
     <SectionBox id="skill-career" backgroundColor="silver">
-      <Box textAlign="center">
-        <SectionTitle>My Career</SectionTitle>
-        <Typography variant="body"></Typography>
-      </Box>
+      <SectionTitle>My Career</SectionTitle>
+      <Typography variant="body"></Typography>
       {careers.map((career, ind) => {
         return (
           <CareerItem
