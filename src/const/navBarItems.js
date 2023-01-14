@@ -6,6 +6,7 @@ import BuildIcon from "@mui/icons-material/Build";
 import ComputerIcon from "@mui/icons-material/Computer";
 import LaptopIcon from "@mui/icons-material/Laptop";
 
+import WorkIcon from "@mui/icons-material/Work";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import CardMembershipIcon from "@mui/icons-material/CardMembership";
 
@@ -15,7 +16,13 @@ import CasinoIcon from "@mui/icons-material/Casino";
 
 import EmailIcon from "@mui/icons-material/Email";
 
-const NavBarItems = [
+const navMain = {
+  title: "Akiyoshi Portfolio",
+  icon: "/images/logo.png",
+  topPath: "/",
+};
+
+const navBarItems = [
   { id: 0, icon: <HomeIcon />, content: "TOP", route: "/" },
   { id: 1, icon: <BadgeIcon />, content: "プロフィール", route: "/profile" },
   {
@@ -25,8 +32,12 @@ const NavBarItems = [
     route: "",
     subContents: [
       { subContent: "成果物", subIcon: <ComputerIcon />, route: "/skill" },
-      { subContent: "スキル", subIcon: <ConstructionIcon />, route: "/skill" },
-      { subContent: "資格", subIcon: <CardMembershipIcon />, route: "/skill" },
+      { subContent: "経歴", subIcon: <ConstructionIcon />, route: "/skill" },
+      {
+        subContent: "スキル",
+        subIcon: <CardMembershipIcon />,
+        route: "/skill",
+      },
     ],
   },
   {
@@ -43,4 +54,4 @@ const NavBarItems = [
   { id: 4, icon: <EmailIcon />, content: "連絡先", route: "/contact" },
 ];
 
-export default NavBarItems;
+export { navMain, navBarItems };
