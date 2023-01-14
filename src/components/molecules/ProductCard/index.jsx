@@ -3,29 +3,20 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  Chip,
-  Dialog,
-  DialogTitle,
-  Slide,
+  experimental_sx,
+  styled,
   Typography,
 } from "@mui/material";
-import TagIcon from "@mui/icons-material/Tag";
-import { forwardRef } from "react";
 import { useState } from "react";
+import CustomHashTag from "../../atoms/HashTag";
+import SlideDialog from "../../atoms/SlideDialog";
 
-const Transition = forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
+const HashTag = styled(CustomHashTag)(experimental_sx({ m: "2px" }));
 
 const ProductCard = (product) => {
   const [open, setOpen] = useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const handleClickOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <>
@@ -45,27 +36,12 @@ const ProductCard = (product) => {
               {product.body}
             </Typography>
             {product.usedSkills.map((skill) => (
-              <Chip
-                key={skill}
-                label={skill}
-                size="small"
-                color="primary"
-                icon={<TagIcon fontSize="small" />}
-                sx={{ m: "4px" }}
-              ></Chip>
+              <HashTag tagName={skill} key={skill} />
             ))}
           </CardContent>
         </CardActionArea>
       </Card>
-
-      <Dialog
-        open={open}
-        keepMounted
-        onClose={handleClose}
-        TransitionComponent={Transition}
-      >
-        <DialogTitle>TEST Dialo</DialogTitle>
-      </Dialog>
+      <SlideDialog openFlg={open} onClose={handleClose} />
     </>
   );
 };

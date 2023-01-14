@@ -1,3 +1,8 @@
+const productSection = {
+  title: "My Product",
+  body: "",
+};
+
 const products = [
   {
     title: "Akiyoshi Portfolio",
@@ -19,4 +24,4 @@ const products = [
   },
 ];
 
-export { products };
+export { productSection, products };

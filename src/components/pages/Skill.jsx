@@ -1,6 +1,6 @@
 import { Box } from "@mui/system";
-import SkillProduct from "../layout/Skill/SkillProduct";
 import SkillCareer from "../organisms/SkillCareer";
+import SkillProduct from "../organisms/SkillProduct";
 import SkillSet from "../organisms/SkillSet";
 
 export default function Skill() {

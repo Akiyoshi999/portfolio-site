@@ -15,8 +15,8 @@ const TableItems = ({ headItems, rowItemsList }) => {
           <TableRowItem items={headItems} />
         </TableHead>
         <TableBody>
-          {rowItemsList.map((rowItems) => (
-            <TableRowItem items={rowItems} />
+          {rowItemsList.map((rowItems, _ind) => (
+            <TableRowItem items={rowItems} key={_ind} />
           ))}
         </TableBody>
       </Table>
