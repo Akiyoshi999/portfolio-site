@@ -8,7 +8,7 @@ const oddJudge = (number) => number % 2 === 0;
 
 const HobbySection = () => {
   return (
-    <SectionBox id="hobby" backgroundColor="gray">
+    <SectionBox id="hobby-section" backgroundColor="gray">
       <SectionTitle>{hobbySection.title}</SectionTitle>
       <Typography variant="body">{hobbySection.body}</Typography>
       <Grid container spacing={4}>

@@ -16,7 +16,7 @@ import TableItems from "../../molecules/TableItems";
 
 const SkillSet = () => {
   return (
-    <SectionBox id="my-skill-set" backgroundColor="gray">
+    <SectionBox id="skill-set-section" backgroundColor="gray">
       <SectionTitle>{skillSection.title}</SectionTitle>
       <Typography variant="body">{skillSection.body}</Typography>
       <Grid container rowSpacing={5} columnSpacing={5} py={5}>

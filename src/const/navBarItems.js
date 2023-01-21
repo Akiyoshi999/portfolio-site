@@ -23,20 +23,43 @@ const navMain = {
 };
 
 const navBarItems = [
-  { id: 0, icon: <HomeIcon />, content: "TOP", route: "/" },
-  { id: 1, icon: <BadgeIcon />, content: "プロフィール", route: "/profile" },
+  {
+    id: 0,
+    icon: <HomeIcon />,
+    content: "TOP",
+    route: "/",
+    elId: "top-section",
+  },
+  {
+    id: 1,
+    icon: <BadgeIcon />,
+    content: "プロフィール",
+    route: "/profile",
+    elId: "profile-section",
+  },
   {
     id: 2,
     icon: <BuildIcon />,
     content: "スキル",
     route: "",
     subContents: [
-      { subContent: "成果物", subIcon: <ComputerIcon />, route: "/skill" },
-      { subContent: "経歴", subIcon: <ConstructionIcon />, route: "/skill" },
+      {
+        subContent: "成果物",
+        subIcon: <ComputerIcon />,
+        route: "/skill",
+        elId: "skill-product-section",
+      },
+      {
+        subContent: "経歴",
+        subIcon: <ConstructionIcon />,
+        route: "/skill",
+        elId: "skill-career-section",
+      },
       {
         subContent: "スキル",
         subIcon: <CardMembershipIcon />,
         route: "/skill",
+        elId: "skill-skills-section",
       },
     ],
   },
@@ -46,12 +69,28 @@ const navBarItems = [
     content: "趣味",
     route: "",
     subContents: [
-      { subContent: "釣り", subIcon: <PhishingIcon />, route: "/hobby" },
-      { subContent: "ボードゲーム", subIcon: <CasinoIcon />, route: "/hobby" },
+      {
+        subContent: "釣り",
+        subIcon: <PhishingIcon />,
+        route: "/hobby",
+        elId: "hobby-fish-section",
+      },
+      {
+        subContent: "ボードゲーム",
+        subIcon: <CasinoIcon />,
+        route: "/hobby",
+        elId: "hobby-boardgame-section",
+      },
       ,
     ],
   },
-  { id: 4, icon: <EmailIcon />, content: "連絡先", route: "/contact" },
+  {
+    id: 4,
+    icon: <EmailIcon />,
+    content: "連絡先",
+    route: "/contact",
+    elId: "contact-section",
+  },
 ];
 
 export { navMain, navBarItems };
