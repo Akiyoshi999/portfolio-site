@@ -4,6 +4,7 @@ const Rating = (props) => <MuiRating readOnly {...props}></MuiRating>;
 const skillSection = {
   title: "My Skill Set",
   body: "修練のすえ身につけたスキルをグラフィカルにまとめました。広く浅くではありますがフロントからバックエンドまで幅広くスキルアップに取り組んできました。オールラウンドに対応できる点が強みですが、全体的に理解が浅く、専門性の低さを認識しています。今後はバックエンド系の開発（クラウド含む）の業務に携わる比率を増やし、少しずつ専門性を高めていきたいと考えています。",
+  elId: "skill-skills-section",
 };
 const skillDescHead = ["評価", "説明"];
 

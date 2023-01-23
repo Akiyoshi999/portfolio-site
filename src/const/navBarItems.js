@@ -15,6 +15,12 @@ import PhishingIcon from "@mui/icons-material/Phishing";
 import CasinoIcon from "@mui/icons-material/Casino";
 
 import EmailIcon from "@mui/icons-material/Email";
+import { careerSection } from "./careerItems";
+import { topContent } from "./topItems";
+import { profileSection } from "./profileItems";
+import { productSection } from "./productItems";
+import { skillSection } from "./skillItems";
+import { contactSection } from "./contactItem";
 
 const navMain = {
   title: "Akiyoshi Portfolio",
@@ -28,14 +34,14 @@ const navBarItems = [
     icon: <HomeIcon />,
     content: "TOP",
     route: "/",
-    elId: "top-section",
+    elId: topContent.elId,
   },
   {
     id: 1,
     icon: <BadgeIcon />,
     content: "プロフィール",
     route: "/profile",
-    elId: "profile-section",
+    elId: profileSection.elId,
   },
   {
     id: 2,
@@ -47,19 +53,19 @@ const navBarItems = [
         subContent: "成果物",
         subIcon: <ComputerIcon />,
         route: "/skill",
-        elId: "skill-product-section",
+        elId: productSection.elId,
       },
       {
         subContent: "経歴",
         subIcon: <ConstructionIcon />,
         route: "/skill",
-        elId: "skill-career-section",
+        elId: careerSection.elId,
       },
       {
         subContent: "スキル",
         subIcon: <CardMembershipIcon />,
         route: "/skill",
-        elId: "skill-skills-section",
+        elId: skillSection.elId,
       },
     ],
   },
@@ -89,7 +95,7 @@ const navBarItems = [
     icon: <EmailIcon />,
     content: "連絡先",
     route: "/contact",
-    elId: "contact-section",
+    elId: contactSection.elId,
   },
 ];
 

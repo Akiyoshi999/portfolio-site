@@ -3,7 +3,7 @@ import SectionBox from "../../ui/Section/SectionBox";
 import SectionTitle from "../../ui/Section/SectionTitle";
 import InputComponent from "../../atoms/InputComponent/InputComponent";
 import SlideAlert from "../../atoms/SlideAlert/SlideAlert";
-import { alerts, contactSection } from "../../../const/ContactItem";
+import { alerts, contactSection } from "../../../const/contactItem";
 import { useContactForm } from "./logic";
 import FormButton from "../../atoms/FormButton/FormButton";
 
@@ -21,7 +21,12 @@ const ContactForm = () => {
   } = useContactForm();
 
   return (
-    <SectionBox textAlign="center" width="80%" backgroundColor="lightblue">
+    <SectionBox
+      id={contactSection.elId}
+      textAlign="center"
+      width="80%"
+      backgroundColor="lightblue"
+    >
       <SectionTitle>{contactSection.title}</SectionTitle>
       <Typography variant="body">{contactSection.body}</Typography>
       <Stack

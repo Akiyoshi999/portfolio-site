@@ -1,6 +1,7 @@
 const productSection = {
   title: "My Product",
   body: "",
+  elId: "skill-product-section",
 };
 
 const products = [

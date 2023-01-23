@@ -1,23 +1,13 @@
-import {
-  experimental_sx,
-  Link as MuiLink,
-  ListItemIcon,
-  MenuItem,
-  styled,
-} from "@mui/material";
+import { ListItemIcon, MenuItem } from "@mui/material";
+import { Link as Scroll } from "react-scroll";
 
-const Link = styled(MuiLink)(
-  experimental_sx({
-    color: "black",
-    textDecoration: "none",
-  })
-);
-
-const TabletSubMenuItem = ({ subIcon, route, subContent }) => {
+const TabletSubMenuItem = ({ subIcon, handleClose, subContent, elId }) => {
   return (
     <MenuItem>
       <ListItemIcon>{subIcon}</ListItemIcon>
-      <Link href={route}>{subContent}</Link>
+      <Scroll to={elId} smooth onClick={handleClose}>
+        {subContent}
+      </Scroll>
     </MenuItem>
   );
 };

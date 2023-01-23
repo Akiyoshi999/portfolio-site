@@ -6,17 +6,18 @@ export const useTabletNavMenu = () => {
   const handleOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handlelose = () => {
+  const handleClose = () => {
     setAnchorEl(null);
   };
 
   const action = {
     anchorEl: anchorEl,
     open: Boolean(anchorEl),
-    onClose: handlelose,
+    onClose: handleClose,
   };
   return {
     handleOpen,
+    handleClose,
     action,
   };
 };

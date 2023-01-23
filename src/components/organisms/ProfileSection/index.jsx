@@ -5,7 +5,7 @@ import SectionTitle from "../../ui/Section/SectionTitle";
 
 const ProfileSection = () => {
   return (
-    <SectionBox id="profile-section" sx={{ backgroundColor: "gray" }}>
+    <SectionBox id={profileSection.elId} sx={{ backgroundColor: "gray" }}>
       <SectionTitle>{profileSection.title}</SectionTitle>
       <Grid container>
         <Grid xs={12} sm={5} item display="flex" justifyContent="center">

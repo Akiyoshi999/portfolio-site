@@ -3,7 +3,11 @@ import MicIcon from "@mui/icons-material/Mic";
 import ComputerIcon from "@mui/icons-material/Computer";
 import ManageSearchIcon from "@mui/icons-material/ManageSearch";
 
-const careerSection = { title: "My Career", body: "" };
+const careerSection = {
+  title: "My Career",
+  body: "",
+  elId: "skill-career-section",
+};
 const careers = [
   {
     date: { before: "2018-10", after: "2020-10" },

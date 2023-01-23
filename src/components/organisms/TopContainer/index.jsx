@@ -13,6 +13,7 @@ const TopContainer = () => {
 
   return (
     <Box
+      id={topContent.elId}
       sx={{
         position: "relative",
         "&:before": {
