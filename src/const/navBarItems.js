@@ -21,6 +21,7 @@ import { profileSection } from "./profileItems";
 import { productSection } from "./productItems";
 import { skillSection } from "./skillItems";
 import { contactSection } from "./contactItem";
+import { hobbys } from "./hobbyItems";
 
 const navMain = {
   title: "Akiyoshi Portfolio",
@@ -33,38 +34,32 @@ const navBarItems = [
     id: 0,
     icon: <HomeIcon />,
     content: "TOP",
-    route: "/",
     elId: topContent.elId,
   },
   {
     id: 1,
     icon: <BadgeIcon />,
     content: "プロフィール",
-    route: "/profile",
     elId: profileSection.elId,
   },
   {
     id: 2,
     icon: <BuildIcon />,
     content: "スキル",
-    route: "",
     subContents: [
       {
         subContent: "成果物",
         subIcon: <ComputerIcon />,
-        route: "/skill",
         elId: productSection.elId,
       },
       {
         subContent: "経歴",
         subIcon: <ConstructionIcon />,
-        route: "/skill",
         elId: careerSection.elId,
       },
       {
         subContent: "スキル",
         subIcon: <CardMembershipIcon />,
-        route: "/skill",
         elId: skillSection.elId,
       },
     ],
@@ -73,19 +68,16 @@ const navBarItems = [
     id: 3,
     icon: <SportsEsportsIcon />,
     content: "趣味",
-    route: "",
     subContents: [
       {
         subContent: "釣り",
         subIcon: <PhishingIcon />,
-        route: "/hobby",
-        elId: "hobby-fish-section",
+        elId: hobbys[0].elId,
       },
       {
         subContent: "ボードゲーム",
         subIcon: <CasinoIcon />,
-        route: "/hobby",
-        elId: "hobby-boardgame-section",
+        elId: hobbys[2].elId,
       },
       ,
     ],
@@ -94,7 +86,6 @@ const navBarItems = [
     id: 4,
     icon: <EmailIcon />,
     content: "連絡先",
-    route: "/contact",
     elId: contactSection.elId,
   },
 ];

@@ -1,8 +1,8 @@
-import { Box, experimental_sx, Grid, styled, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import ImageComponent from "../../atoms/ImageComponent";
 
-const HobbyTitle = ({ title }) => (
-  <Grid xs={12} item>
+const HobbyTitle = ({ title, id }) => (
+  <Grid id={id} xs={12} item>
     <Typography variant="h3">{title}</Typography>
   </Grid>
 );
@@ -21,23 +21,20 @@ const HobbyContent = ({ content }) => (
   </Grid>
 );
 
-const HobbyItemGrid = ({ title, img, content, oddFlg }) => (
-  <>
-    <HobbyTitle title={title} />
-    <Grid
-      item
-      container
-      direction={{ xs: "row", md: oddFlg ? "row" : "row-reverse" }}
-    >
-      <HobbyImage img={img} />
-      <HobbyContent content={content} />
-    </Grid>
-  </>
-);
-
-const HobbyItem = ({ title, img, content, oddFlg }) => {
+const HobbyItem = ({ title, img, content, elId, oddFlg }) => {
   return (
-    <HobbyItemGrid title={title} img={img} content={content} oddFlg={oddFlg} />
+    <>
+      <HobbyTitle title={title} id={elId} />
+      <Grid
+        item
+        container
+        direction={{ xs: "row", md: oddFlg ? "row" : "row-reverse" }}
+        columnSpacing={2}
+      >
+        <HobbyImage img={img} />
+        <HobbyContent content={content} />
+      </Grid>
+    </>
   );
 };
 

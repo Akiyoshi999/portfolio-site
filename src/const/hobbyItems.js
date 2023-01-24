@@ -6,9 +6,24 @@ const dummyText = [
 
 const hobbySection = { title: "My Hobby", body: "" };
 const hobbys = [
-  { img: "/images/test.png", title: "シーバス", content: dummyText[0] },
-  { img: "/images/test.png", title: "エリアトラウト", content: dummyText[1] },
-  { img: "/images/test.png", title: "ボードゲーム", content: dummyText[2] },
+  {
+    elId: "hobby-fish-section",
+    img: "/images/test.png",
+    title: "シーバス",
+    content: dummyText[0],
+  },
+  {
+    elId: "hobby-area-fish-section",
+    img: "/images/test.png",
+    title: "エリアトラウト",
+    content: dummyText[1],
+  },
+  {
+    elId: "hobby-game-section",
+    img: "/images/test.png",
+    title: "ボードゲーム",
+    content: dummyText[2],
+  },
 ];
 
 export { hobbySection, hobbys };
