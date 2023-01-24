@@ -10,13 +10,13 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { navBarItems, navMain } from "../../../const/navBarItems";
-import { useState } from "react";
 import ImageComponent from "../../atoms/ImageComponent";
 import MobileMenuItem from "../../molecules/MobileMenuItem";
 import { useMobileMenu } from "./logic";
 
 export default function MobileHeader() {
-  const { menuFlg, handleMenuOpen, handleMenuClose } = useMobileMenu();
+  const { menuFlg, handleMenuOpen, handleMenuClose, handleScroll } =
+    useMobileMenu();
 
   const MobileHeaderDeault = ({ handleOpen }) => (
     <Toolbar disableGutters sx={{ maxWidth: "xl", height: "64px" }}>
@@ -56,13 +56,13 @@ export default function MobileHeader() {
         <MobileHeaderDeault handleOpen={handleMenuOpen} />
       </AppBar>
       <Drawer anchor="left" open={menuFlg} onClose={handleMenuClose}>
-        <Box
-          sx={{ width: 250 }}
-          // onClick={toggleDrawer(anchor, false)}
-          // onKeyDown={toggleDrawer(anchor, false)}
-        >
+        <Box sx={{ width: 250 }}>
           {navBarItems.map((item) => (
-            <MobileMenuItem key={item.content} {...item} />
+            <MobileMenuItem
+              key={item.content}
+              handleScroll={handleScroll}
+              {...item}
+            />
           ))}
           <Divider />
         </Box>

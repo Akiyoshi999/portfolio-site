@@ -9,7 +9,7 @@ import {
 import { useState } from "react";
 import MobileSubMenuItems from "../MobileSubMenuItems";
 
-const MobileMenuItem = ({ icon, content, subContents, route = "" }) => {
+const MobileMenuItem = ({ icon, content, subContents, elId, handleScroll }) => {
   const [subMenuopen, setSubMenuopen] = useState(false);
   const handleSubMenuFlg = () => {
     setSubMenuopen(!subMenuopen);
@@ -20,7 +20,9 @@ const MobileMenuItem = ({ icon, content, subContents, route = "" }) => {
   return (
     <>
       <ListItem disablePadding>
-        <ListItemButton href={route} onClick={handleSubMenuFlg}>
+        <ListItemButton
+          onClick={subContents ? handleSubMenuFlg : () => handleScroll(elId)}
+        >
           <ListItemIcon>{icon}</ListItemIcon>
           <ListItemText primary={content} />
           {subContents ? expandCond : ""}
@@ -28,7 +30,10 @@ const MobileMenuItem = ({ icon, content, subContents, route = "" }) => {
       </ListItem>
       {subContents ? (
         <Collapse in={subMenuopen} timeout="auto">
-          <MobileSubMenuItems subContents={subContents} />
+          <MobileSubMenuItems
+            subContents={subContents}
+            handleScroll={handleScroll}
+          />
         </Collapse>
       ) : (
         ""
