@@ -1,25 +1,36 @@
-import { Link, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { navMain } from "../../../const/navBarItems";
+import { topContent } from "../../../const/topItems";
 import ImageComponent from "../../atoms/ImageComponent";
+import ScrollButton from "../../atoms/ScrollButton";
 
 const IconTitle = () => (
   <>
-    <Link href={navMain.topPath} position="relative" sx={{ height: "100%" }}>
-      <ImageComponent
-        src={navMain.icon}
-        sx={{ height: "100%", width: "auto", pt: 1 }}
-      />
-    </Link>
-    <Typography
-      variant="h5"
+    <ScrollButton
+      to={topContent.elId}
       sx={{
-        flexGrow: 1,
-        ml: 2,
-        fontFamily: ["Comfortaa", "cursive"].join(","),
+        position: "relative",
+        height: "100%",
+        cursor: "pointer",
+        display: "flex",
+        alignItems: "center",
       }}
     >
-      {navMain.title}
-    </Typography>
+      <ImageComponent
+        src={navMain.icon}
+        sx={{ position: "relative", height: "100%", width: "auto", pt: 1 }}
+      />
+
+      <Typography
+        variant="h5"
+        ml={2}
+        sx={{
+          fontFamily: ["Comfortaa", "cursive"].join(","),
+        }}
+      >
+        {navMain.title}
+      </Typography>
+    </ScrollButton>
   </>
 );
 

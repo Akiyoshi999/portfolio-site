@@ -1,14 +1,22 @@
 import {
-  ListItem,
+  experimental_sx,
+  ListItem as MuiListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  styled,
 } from "@mui/material";
 
-const MobileSubMenuItem = ({ subIcon, subContent, route }) => {
+const ListItem = styled(MuiListItem)(
+  experimental_sx({
+    pl: 2,
+  })
+);
+
+const MobileSubMenuItem = ({ subIcon, subContent, elId, handleScroll }) => {
   return (
-    <ListItem>
-      <ListItemButton href={route}>
+    <ListItem disablePadding>
+      <ListItemButton onClick={() => handleScroll(elId)}>
         <ListItemIcon>{subIcon}</ListItemIcon>
         <ListItemText primary={subContent} />
       </ListItemButton>

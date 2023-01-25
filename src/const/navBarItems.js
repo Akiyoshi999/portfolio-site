@@ -15,6 +15,13 @@ import PhishingIcon from "@mui/icons-material/Phishing";
 import CasinoIcon from "@mui/icons-material/Casino";
 
 import EmailIcon from "@mui/icons-material/Email";
+import { careerSection } from "./careerItems";
+import { topContent } from "./topItems";
+import { profileSection } from "./profileItems";
+import { productSection } from "./productItems";
+import { skillSection } from "./skillItems";
+import { contactSection } from "./contactItem";
+import { hobbys } from "./hobbyItems";
 
 const navMain = {
   title: "Akiyoshi Portfolio",
@@ -23,20 +30,37 @@ const navMain = {
 };
 
 const navBarItems = [
-  { id: 0, icon: <HomeIcon />, content: "TOP", route: "/" },
-  { id: 1, icon: <BadgeIcon />, content: "プロフィール", route: "/profile" },
+  {
+    id: 0,
+    icon: <HomeIcon />,
+    content: "TOP",
+    elId: topContent.elId,
+  },
+  {
+    id: 1,
+    icon: <BadgeIcon />,
+    content: "プロフィール",
+    elId: profileSection.elId,
+  },
   {
     id: 2,
     icon: <BuildIcon />,
     content: "スキル",
-    route: "",
     subContents: [
-      { subContent: "成果物", subIcon: <ComputerIcon />, route: "/skill" },
-      { subContent: "経歴", subIcon: <ConstructionIcon />, route: "/skill" },
+      {
+        subContent: "成果物",
+        subIcon: <ComputerIcon />,
+        elId: productSection.elId,
+      },
+      {
+        subContent: "経歴",
+        subIcon: <ConstructionIcon />,
+        elId: careerSection.elId,
+      },
       {
         subContent: "スキル",
         subIcon: <CardMembershipIcon />,
-        route: "/skill",
+        elId: skillSection.elId,
       },
     ],
   },
@@ -44,14 +68,26 @@ const navBarItems = [
     id: 3,
     icon: <SportsEsportsIcon />,
     content: "趣味",
-    route: "",
     subContents: [
-      { subContent: "釣り", subIcon: <PhishingIcon />, route: "/hobby" },
-      { subContent: "ボードゲーム", subIcon: <CasinoIcon />, route: "/hobby" },
+      {
+        subContent: "釣り",
+        subIcon: <PhishingIcon />,
+        elId: hobbys[0].elId,
+      },
+      {
+        subContent: "ボードゲーム",
+        subIcon: <CasinoIcon />,
+        elId: hobbys[2].elId,
+      },
       ,
     ],
   },
-  { id: 4, icon: <EmailIcon />, content: "連絡先", route: "/contact" },
+  {
+    id: 4,
+    icon: <EmailIcon />,
+    content: "連絡先",
+    elId: contactSection.elId,
+  },
 ];
 
 export { navMain, navBarItems };

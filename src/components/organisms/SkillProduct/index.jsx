@@ -20,7 +20,7 @@ const CardGrid = (props) => (
 
 const SkillProduct = () => {
   return (
-    <SectionBox id="skill-artifact" backgroundColor="gray">
+    <SectionBox id={productSection.elId} backgroundColor="gray">
       <SectionTitle>{productSection.title}</SectionTitle>
       <Typography variant="body">{productSection.body}</Typography>
       <Grid container justifyContent="center" spacing={2}>

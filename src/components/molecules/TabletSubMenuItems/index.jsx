@@ -21,7 +21,11 @@ const TabletSubMenuItems = ({ anchorEl, onClose, subContents }) => {
       }}
     >
       {subContents.map((subContent) => (
-        <TabletSubMenuItem key={subContent.subContent} {...subContent} />
+        <TabletSubMenuItem
+          key={subContent.subContent}
+          handleClose={onClose}
+          {...subContent}
+        />
       ))}
     </Menu>
   );

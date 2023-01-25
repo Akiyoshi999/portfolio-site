@@ -4,6 +4,7 @@ const contactSection = {
   簡単ではありますが、お問い合わせのフォームをご用意しました。
           ホームページの改善点や私について連絡がしたい方は、こちらからご連絡ください。
   `,
+  elId: "contact-section",
 };
 const alerts = {
   success: {

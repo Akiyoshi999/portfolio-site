@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { scroller } from "react-scroll";
 
 export const useMobileMenu = () => {
   const [menuFlg, setMenuFlg] = useState(false);
@@ -6,6 +7,11 @@ export const useMobileMenu = () => {
     setMenuFlg(true);
   };
   const handleMenuClose = () => {
+    setMenuFlg(false);
+  };
+
+  const handleScroll = (elId) => {
+    scroller.scrollTo(elId, { smooth: true, offset: -64 });
     setMenuFlg(false);
   };
 
@@ -24,5 +30,6 @@ export const useMobileMenu = () => {
     menuFlg,
     handleMenuOpen,
     handleMenuClose,
+    handleScroll,
   };
 };

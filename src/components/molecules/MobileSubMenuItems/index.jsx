@@ -1,10 +1,14 @@
 import MobileSubMenuItem from "../../atoms/MobileSubMenuItem";
 
-const MobileSubMenuItems = ({ subContents }) => {
+const MobileSubMenuItems = ({ subContents, handleScroll }) => {
   return (
     <>
       {subContents.map((item) => (
-        <MobileSubMenuItem key={item.subContent} {...item} />
+        <MobileSubMenuItem
+          handleScroll={handleScroll}
+          key={item.subContent}
+          {...item}
+        />
       ))}
     </>
   );
