@@ -1,13 +1,14 @@
 import { ListItemIcon, MenuItem } from "@mui/material";
 import { Link as Scroll } from "react-scroll";
+import ScrollButton from "../ScrollButton";
 
 const TabletSubMenuItem = ({ subIcon, handleClose, subContent, elId }) => {
   return (
     <MenuItem>
       <ListItemIcon>{subIcon}</ListItemIcon>
-      <Scroll to={elId} smooth onClick={handleClose}>
+      <ScrollButton to={elId} onClick={handleClose}>
         {subContent}
-      </Scroll>
+      </ScrollButton>
     </MenuItem>
   );
 };

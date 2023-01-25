@@ -5,7 +5,6 @@ import {
   Drawer,
   Grid,
   IconButton,
-  Link,
   Toolbar,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -13,6 +12,8 @@ import { navBarItems, navMain } from "../../../const/navBarItems";
 import ImageComponent from "../../atoms/ImageComponent";
 import MobileMenuItem from "../../molecules/MobileMenuItem";
 import { useMobileMenu } from "./logic";
+import ScrollButton from "../../atoms/ScrollButton";
+import { topContent } from "../../../const/topItems";
 
 export default function MobileHeader() {
   const { menuFlg, handleMenuOpen, handleMenuClose, handleScroll } =
@@ -29,12 +30,12 @@ export default function MobileHeader() {
         justifyContent="center"
         sx={{ height: "100%", mt: 1 }}
       >
-        <Link href={navMain.title}>
+        <ScrollButton to={topContent.elId} sx={{ cursor: "pointer" }}>
           <ImageComponent
             src={navMain.icon}
             sx={{ height: "62px", width: "62px" }}
           />
-        </Link>
+        </ScrollButton>
       </Grid>
     </Toolbar>
   );
@@ -43,9 +44,11 @@ export default function MobileHeader() {
     <>
       <AppBar
         spacing={2}
-        position="relative"
+        position="sticky"
         color="orange700"
         sx={{
+          top: 0,
+          zIndex: 100,
           flexGrow: 1,
           display: {
             xs: "flex",

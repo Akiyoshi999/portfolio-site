@@ -18,8 +18,6 @@ const Top = () => {
         <SkillSet />
       </Box>
       <HobbySection />
-      {/**TODO: ホビーセクションにelIDを振る
-       */}
       <ContactForm />
     </>
   );

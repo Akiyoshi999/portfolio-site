@@ -11,7 +11,7 @@ export const useMobileMenu = () => {
   };
 
   const handleScroll = (elId) => {
-    scroller.scrollTo(elId, { smooth: true });
+    scroller.scrollTo(elId, { smooth: true, offset: -64 });
     setMenuFlg(false);
   };
 

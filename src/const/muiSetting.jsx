@@ -23,8 +23,8 @@ const theme = createTheme({
     //   main: "#311b92",
     // },
     orange700: {
-      // main: amber[700],
-      main: alpha(orange[400], 0.7),
+      main: amber[700],
+      // main: alpha(orange[400], 0.7),
     },
   },
 });

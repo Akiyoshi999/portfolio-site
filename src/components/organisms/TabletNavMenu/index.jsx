@@ -2,6 +2,7 @@ import { Button as MuiButton, experimental_sx, styled } from "@mui/material";
 import { useTabletNavMenu } from "./logic";
 import { Link as Scroll } from "react-scroll";
 import TabletSubMenuItems from "../../molecules/TabletSubMenuItems";
+import ScrollButton from "../../atoms/ScrollButton";
 
 const Button = styled(MuiButton)(
   experimental_sx({
@@ -25,9 +26,7 @@ const TabletNavMenu = ({ elId, subContents = [], icon, content }) => {
         {subContentFlg ? (
           content
         ) : (
-          <Scroll to={elId} smooth>
-            {content}
-          </Scroll>
+          <ScrollButton to={elId}>{content}</ScrollButton>
         )}
       </Button>
       {subContentFlg ? (
