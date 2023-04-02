@@ -42,6 +42,7 @@ export const useContactForm = () => {
         })
         .catch((err) => {
           console.error(err);
+          setLoading(false);
         });
     }
   };

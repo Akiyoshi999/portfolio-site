@@ -50,12 +50,6 @@ const careers = [
       "Splunk環境の構築、単体テスト、結合テスト試験実施",
     ],
   },
-  {
-    date: { before: "", after: "" },
-    icon: <ManageSearchIcon fontSize="inherit" />,
-    title: "ログデータ収集・可視化製品(Splunk)の保守対応および、環境構築",
-    contents: ["Splunk製品に関する顧客対応"],
-  },
 ];
 
 export { careers, careerSection };
