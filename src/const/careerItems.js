@@ -41,7 +41,7 @@ const careers = [
     ],
   },
   {
-    date: { before: "2021-12", after: "" },
+    date: { before: "2021-12", after: "現在" },
     icon: <ManageSearchIcon fontSize="inherit" />,
     title: "ログデータ収集・可視化製品(Splunk)の保守対応および、環境構築",
     contents: [
@@ -49,6 +49,12 @@ const careers = [
       "Splunk の環境構築に関する詳細設計書、単体テスト、結合テスト項目書作成",
       "Splunk環境の構築、単体テスト、結合テスト試験実施",
     ],
+  },
+  {
+    date: { before: "", after: "" },
+    icon: <ManageSearchIcon fontSize="inherit" />,
+    title: "ログデータ収集・可視化製品(Splunk)の保守対応および、環境構築",
+    contents: ["Splunk製品に関する顧客対応"],
   },
 ];
 
