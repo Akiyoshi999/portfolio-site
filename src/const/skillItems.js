@@ -45,6 +45,8 @@ const cerfHead = ["資格"];
 const certification = [
   ["Linuc レベル 1"],
   ["AWS Certified Solutions Architect Associate"],
+  ["AWS Certified Developer - Associate"],
+  ["AWS Certified SysOps Administrator - Associate"],
 ];
 
 export {
