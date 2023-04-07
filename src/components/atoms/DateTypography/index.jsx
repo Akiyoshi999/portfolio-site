@@ -1,8 +1,4 @@
-import {
-  experimental_sx,
-  styled,
-  Typography as MuiTypography,
-} from "@mui/material";
+import { styled, Typography as MuiTypography } from "@mui/material";
 
 const yearMonth = (targetDate) => {
   if (targetDate === "現在") return "現在";
@@ -19,8 +15,8 @@ const term = ({ before, after }) => {
   return `${beforeDate}\n~\n${afterDate}`;
 };
 
-const Typography = styled(MuiTypography)(
-  experimental_sx({
+const Typography = styled(MuiTypography)(({ theme }) =>
+  theme.unstable_sx({
     whiteSpace: "pre-wrap",
   })
 );

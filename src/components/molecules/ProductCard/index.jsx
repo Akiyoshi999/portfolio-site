@@ -11,7 +11,11 @@ import { useState } from "react";
 import CustomHashTag from "../../atoms/HashTag";
 import SlideDialog from "../../atoms/SlideDialog";
 
-const HashTag = styled(CustomHashTag)(experimental_sx({ m: "2px" }));
+const HashTag = styled(CustomHashTag)(({ theme }) =>
+  theme.unstable_sx({
+    m: "2px",
+  })
+);
 
 const ProductCard = (product) => {
   const [open, setOpen] = useState(false);

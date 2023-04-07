@@ -7,10 +7,8 @@ import {
   styled,
 } from "@mui/material";
 
-const ListItem = styled(MuiListItem)(
-  experimental_sx({
-    pl: 2,
-  })
+const ListItem = styled(MuiListItem)(({ theme }) =>
+  theme.unstable_sx({ pl: 2 })
 );
 
 const MobileSubMenuItem = ({ subIcon, subContent, elId, handleScroll }) => {

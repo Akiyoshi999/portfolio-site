@@ -1,11 +1,10 @@
-import { Button as MuiButton, experimental_sx, styled } from "@mui/material";
+import { Button as MuiButton, styled } from "@mui/material";
 import { useTabletNavMenu } from "./logic";
-import { Link as Scroll } from "react-scroll";
 import TabletSubMenuItems from "../../molecules/TabletSubMenuItems";
 import ScrollButton from "../../atoms/ScrollButton";
 
-const Button = styled(MuiButton)(
-  experimental_sx({
+const Button = styled(MuiButton)(({ theme }) =>
+  theme.unstable_sx({
     color: "black",
     "&:hover": {
       color: "white",
