@@ -1,14 +1,11 @@
 import {
-  experimental_sx,
   ListItem,
   ListItemText as MuiListItemText,
   styled,
 } from "@mui/material";
 
-const ListItemText = styled(MuiListItemText)(
-  experimental_sx({
-    display: "list-item",
-  })
+const ListItemText = styled(MuiListItemText)(({ theme }) =>
+  theme.unstable_sx({ display: "list-item" })
 );
 
 const CareerSubItem = ({ content }) => (

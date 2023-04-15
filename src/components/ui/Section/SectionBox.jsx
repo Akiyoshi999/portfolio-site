@@ -1,8 +1,8 @@
 import { Box as MuiBox } from "@mui/material";
-import { experimental_sx, styled } from "@mui/system";
+import { styled } from "@mui/system";
 
-const CustomBox = styled(MuiBox)(
-  experimental_sx({
+const CustomBox = styled(MuiBox)(({ theme }) =>
+  theme.unstable_sx({
     py: 5,
     width: "80%",
     margin: "0 auto",
