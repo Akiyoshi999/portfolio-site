@@ -1,9 +1,5 @@
 import { TableCell, TableRow, Typography } from "@mui/material";
 
-// const TableCell = (props) => (
-//   <MuiTableCell {...props}>{props.children}</MuiTableCell>
-// );
-
 const TableRowItem = ({ items }) => {
   return (
     <TableRow>

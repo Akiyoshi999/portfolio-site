@@ -2,14 +2,13 @@ import {
   Card,
   CardActionArea,
   CardContent,
-  CardMedia,
-  experimental_sx,
   styled,
   Typography,
 } from "@mui/material";
 import { useState } from "react";
 import CustomHashTag from "../../atoms/HashTag";
-import SlideDialog from "../../atoms/SlideDialog";
+import ProductDialog from "../ProductDialog";
+import CustomCardMedia from "../../ui/Card/CustomCardMedia";
 
 const HashTag = styled(CustomHashTag)(({ theme }) =>
   theme.unstable_sx({
@@ -25,12 +24,13 @@ const ProductCard = (product) => {
   return (
     <>
       <Card sx={{ maxWidth: 345 }}>
-        <CardActionArea onClick={handleClickOpen}>
-          <CardMedia
-            component="img"
-            height="auto"
-            width="100%"
-            image={product.image}
+        <CardActionArea
+          onClick={handleClickOpen}
+          sx={{ pointerEvents: product.preparationFlg && "none" }}
+        >
+          <CustomCardMedia
+            image={product.images[0]}
+            preparationFlg={product.preparationFlg}
           />
           <CardContent>
             <Typography gutterBottom variant="h6">
@@ -45,7 +45,15 @@ const ProductCard = (product) => {
           </CardContent>
         </CardActionArea>
       </Card>
-      <SlideDialog openFlg={open} onClose={handleClose} />
+      {!product.preparationFlg && (
+        <ProductDialog
+          openFlg={open}
+          onClose={handleClose}
+          title={product.title}
+          images={product.images}
+          describe={product.describe}
+        />
+      )}
     </>
   );
 };
