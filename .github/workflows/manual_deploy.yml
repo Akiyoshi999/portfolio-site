@@ -1,4 +1,4 @@
-name: Manually deploy my-next-app
+name: Manually deploy portfolio-site
 on: workflow_dispatch
 
 jobs:
