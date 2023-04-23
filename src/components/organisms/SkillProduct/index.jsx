@@ -1,8 +1,9 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { products, productSection } from "../../../const/productItems";
 import SectionBox from "../../ui/Section/SectionBox";
 import SectionTitle from "../../ui/Section/SectionTitle";
 import ProductCard from "../../molecules/ProductCard";
+import ContainerBox from "../../ui/Container/ContainerBox";
 
 const CardGrid = (props) => (
   <Grid
@@ -20,17 +21,19 @@ const CardGrid = (props) => (
 
 const SkillProduct = () => {
   return (
-    <SectionBox id={productSection.elId} backgroundColor="gray">
-      <SectionTitle>{productSection.title}</SectionTitle>
-      <Typography variant="body">{productSection.body}</Typography>
-      <Grid container justifyContent="center" spacing={2}>
-        {products.map((product, ind) => (
-          <CardGrid key={ind}>
-            <ProductCard {...product} />
-          </CardGrid>
-        ))}
-      </Grid>
-    </SectionBox>
+    <ContainerBox>
+      <SectionBox id={productSection.elId}>
+        <SectionTitle>{productSection.title}</SectionTitle>
+        <Typography variant="body">{productSection.body}</Typography>
+        <Grid container justifyContent="center" spacing={2}>
+          {products.map((product, ind) => (
+            <CardGrid key={ind}>
+              <ProductCard {...product} />
+            </CardGrid>
+          ))}
+        </Grid>
+      </SectionBox>
+    </ContainerBox>
   );
 };
 
