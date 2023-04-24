@@ -1,13 +1,8 @@
 import { Typography, Grid } from "@mui/material";
 import {
-  backendSkills,
-  cerfHead,
-  certification,
-  commonHead,
-  devSkills,
-  frontSkills,
   skillDesc,
   skillDescHead,
+  skillList,
   skillSection,
 } from "../../../const/skillItems";
 import SectionBox from "../../ui/Section/SectionBox";
@@ -25,41 +20,21 @@ const SkillSet = () => {
           <Grid xs={12} item>
             <TableItems headItems={skillDescHead} rowItemsList={skillDesc} />
           </Grid>
-          <Grid xs={12} md={6} item>
-            <TableItems
-              title={frontSkills.title}
-              headItems={commonHead}
-              rowItemsList={frontSkills.skills}
-            />
-          </Grid>
-          <Grid xs={12} md={6} item>
-            <TableItems
-              title={frontSkills.title}
-              headItems={commonHead}
-              rowItemsList={frontSkills.skills}
-            />
-          </Grid>
-          <Grid xs={12} md={6} item>
-            <TableItems
-              title={backendSkills.title}
-              headItems={commonHead}
-              rowItemsList={backendSkills.skills}
-            />
-          </Grid>
-          <Grid xs={12} md={6} item>
-            <TableItems
-              title={devSkills.title}
-              headItems={commonHead}
-              rowItemsList={devSkills.skills}
-            />
-          </Grid>
-          <Grid xs={12} md item>
-            <TableItems
-              title={certification.title}
-              headItems={cerfHead}
-              rowItemsList={certification.skills}
-            />
-          </Grid>
+          {skillList.map((skillSection, ind) => (
+            <Grid
+              xs={skillList.length - 1 !== ind ? 12 : true}
+              md={skillList.length - 1 !== ind ? 6 : true}
+              item
+            >
+              <TableItems
+                title={skillSection.title}
+                titleIcon={skillSection.titleIcon}
+                subheader={skillSection.subheader}
+                headItems={skillSection.commonHead}
+                rowItemsList={skillSection.skills}
+              />
+            </Grid>
+          ))}
         </Grid>
       </SectionBox>
     </ContainerBox>
