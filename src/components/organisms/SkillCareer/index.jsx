@@ -7,7 +7,7 @@ import SectionTitle from "../../ui/Section/SectionTitle";
 const SkillCareer = () => {
   return (
     <Box>
-      <SectionBox id={careerSection.elId} sx={{ backgroundColor: "#bcaaa4" }}>
+      <SectionBox id={careerSection.elId} sx={{ backgroundColor: "#fdfcfc" }}>
         <SectionTitle>{careerSection.title}</SectionTitle>
         <Typography variant="body">{careerSection.body}</Typography>
         {careers.map((career, ind) => {
