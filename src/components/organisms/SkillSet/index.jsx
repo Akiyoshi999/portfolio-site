@@ -22,6 +22,7 @@ const SkillSet = () => {
           </Grid>
           {skillList.map((skillSection, ind) => (
             <Grid
+              key={ind}
               xs={skillList.length - 1 !== ind ? 12 : true}
               md={skillList.length - 1 !== ind ? 6 : true}
               item

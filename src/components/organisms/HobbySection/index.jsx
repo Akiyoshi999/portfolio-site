@@ -10,7 +10,7 @@ const oddJudge = (number) => number % 2 === 0;
 const HobbySection = () => {
   return (
     <ContainerBox>
-      <SectionBox id="hobby-section" backgroundColor="gray">
+      <SectionBox id="hobby-section">
         <SectionTitle>{hobbySection.title}</SectionTitle>
         <Typography variant="body">{hobbySection.body}</Typography>
         <Grid container spacing={4}>
