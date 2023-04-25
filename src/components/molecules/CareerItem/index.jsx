@@ -15,7 +15,7 @@ const boderStyle = {
   top: 0,
   left: "50%",
   height: "100%",
-  borderLeft: "2px solid blue",
+  borderLeft: "2px solid #795548",
 };
 
 const DateItem = ({ date }) => (
@@ -29,14 +29,13 @@ const IconItem = ({ icon, lastChildFlg }) => (
     item
     xs={1}
     sx={{
-      bgcolor: "red",
       position: "relative",
       "&::before": lastChildFlg ? boderStyle : "",
     }}
     display="flex"
     justifyContent="center"
   >
-    <Avatar>{icon}</Avatar>
+    <Avatar sx={{ bgcolor: "#795548" }}>{icon}</Avatar>
   </Grid>
 );
 

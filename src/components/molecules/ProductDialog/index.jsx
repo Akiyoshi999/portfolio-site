@@ -35,7 +35,11 @@ const ProductDialog = ({ openFlg, onClose, title, images, describe }) => {
         <Grid container spacing={2}>
           <Grid xs={12} md={4} item sx={{ wordWrap: "break-word" }}>
             {describe.map((item, i) => (
-              <DescriptionItem title={item.title} description={item.content} />
+              <DescriptionItem
+                key={i}
+                title={item.title}
+                description={item.content}
+              />
             ))}
           </Grid>
           <Grid xs={12} md={8} item>

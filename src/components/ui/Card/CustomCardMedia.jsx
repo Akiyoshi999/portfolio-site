@@ -1,6 +1,10 @@
 import { CardMedia as MuiCardMedia, styled } from "@mui/material";
 
-const CardMedia = styled(MuiCardMedia)(({ theme, preparationFlg = false }) =>
+const CusCardMedia = ({ preparationFlg = false, ...props }) => (
+  <MuiCardMedia {...props} />
+);
+
+const CardMedia = styled(CusCardMedia)(({ theme, preparationFlg }) =>
   theme.unstable_sx({
     minHeight: 200,
     maxHeight: "100%",

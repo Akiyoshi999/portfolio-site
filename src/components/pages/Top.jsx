@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import ContactForm from "../organisms/ContactForm";
 import HobbySection from "../organisms/HobbySection";
 import ProfileSection from "../organisms/ProfileSection";
@@ -12,11 +11,9 @@ const Top = () => {
     <>
       <TopContainer />
       <ProfileSection />
-      <Box sx={{ backgroundColor: "gray" }}>
-        <SkillProduct />
-        <SkillCareer />
-        <SkillSet />
-      </Box>
+      <SkillProduct />
+      <SkillCareer />
+      <SkillSet />
       <HobbySection />
       <ContactForm />
     </>
