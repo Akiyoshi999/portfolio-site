@@ -17,7 +17,7 @@ const ProfileSection = () => {
             />
           </Grid>
           <Grid item xs={12} sm={7}>
-            <Typography textAlign="justify" m={1} p={1}>
+            <Typography textAlign="justify" m={1} p={1} whiteSpace="pre-wrap">
               {profileSection.body}
             </Typography>
           </Grid>
