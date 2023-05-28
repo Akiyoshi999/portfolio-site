@@ -91,6 +91,7 @@ const certification = {
     ["AWS Certified Solutions Architect Associate"],
     ["AWS Certified Developer - Associate"],
     ["AWS Certified SysOps Administrator - Associate"],
+    ["AWS Certified Security - Specialty"],
   ],
 };
 
