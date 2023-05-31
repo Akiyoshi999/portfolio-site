@@ -37,7 +37,10 @@ const TableItems = ({
           }
           titleTypographyProps={{ variant: "h5" }}
           subheader={subheader}
-          subheaderTypographyProps={{ variant: "h6" }}
+          subheaderTypographyProps={{
+            variant: "body2",
+            mt: 1,
+          }}
         />
       )}
       <Table>

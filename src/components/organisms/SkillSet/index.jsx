@@ -15,7 +15,9 @@ const SkillSet = () => {
     <ContainerBox>
       <SectionBox id={skillSection.elId}>
         <SectionTitle>{skillSection.title}</SectionTitle>
-        <Typography variant="body">{skillSection.body}</Typography>
+        <Typography textAlign="left" whiteSpace="pre-wrap">
+          {skillSection.body}
+        </Typography>
         <Grid container rowSpacing={5} columnSpacing={5} py={5}>
           <Grid xs={12} item>
             <TableItems headItems={skillDescHead} rowItemsList={skillDesc} />

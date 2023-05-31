@@ -1,11 +1,17 @@
-import { Stack, Typography } from "@mui/material";
+import { Link, Stack, Typography } from "@mui/material";
 import TextTitle from "../../atoms/TextTitle";
 
 const DescriptionItem = ({ title, description }) => {
   return (
     <Stack spacing={2}>
       <TextTitle>{title}</TextTitle>
-      <Typography>{description}</Typography>
+      {title == "Github" ? (
+        <Link href={description} target="_blank" rel="noopener noreferrer">
+          {description}
+        </Link>
+      ) : (
+        <Typography whiteSpace="pre-wrap">{description}</Typography>
+      )}
     </Stack>
   );
 };

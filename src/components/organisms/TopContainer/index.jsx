@@ -45,6 +45,7 @@ const TopContainer = () => {
           top: 0,
           left: 0,
           height: "100%",
+          ml: { md: 3 },
           width: { xs: "100%", md: "65%" },
         }}
       >

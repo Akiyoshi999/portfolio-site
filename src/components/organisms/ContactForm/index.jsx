@@ -25,7 +25,7 @@ const ContactForm = () => {
     <ContainerBox>
       <SectionBox id={contactSection.elId} textAlign="center" width="80%">
         <SectionTitle>{contactSection.title}</SectionTitle>
-        <Typography variant="body">{contactSection.body}</Typography>
+        <Typography mb={3}>{contactSection.body}</Typography>
         <Stack component="form" onSubmit={handleSubmit(submit)} spacing={2}>
           <InputComponent
             control={control}

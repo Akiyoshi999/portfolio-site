@@ -1,8 +1,15 @@
-import { alpha, createTheme } from "@mui/material";
+import { createTheme } from "@mui/material";
 import { amber, grey, orange, red } from "@mui/material/colors";
 
 const theme = createTheme({
   components: {
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          // whiteSpace: "pre-wrap",
+        },
+      },
+    },
     MuiOutlinedInput: {
       styleOverrides: {
         input: {
@@ -19,12 +26,8 @@ const theme = createTheme({
   },
   palette: {
     mode: "light",
-    // primary: {
-    //   main: "#311b92",
-    // },
     orange700: {
       main: amber[700],
-      // main: alpha(orange[400], 0.7),
     },
   },
 });

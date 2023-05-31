@@ -29,15 +29,12 @@ const ProductCard = (product) => {
           sx={{ pointerEvents: product.preparationFlg && "none" }}
         >
           <CustomCardMedia
-            image={product.images[0]}
+            image={product.image}
             preparationFlg={product.preparationFlg}
           />
           <CardContent>
             <Typography gutterBottom variant="h6">
               {product.title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" pb={2}>
-              {product.body}
             </Typography>
             {product.usedSkills.map((skill) => (
               <HashTag tagName={skill} key={skill} />

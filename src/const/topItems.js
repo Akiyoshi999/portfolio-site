@@ -1,7 +1,7 @@
 const topContent = {
-  title: "お客様とより良いサービスを提供したいーー",
-  body: "サイトウグループは、お客様に愛されるサービスを提供いたします。",
-  image: "/images/test.png",
+  title: "お客様により良いサービスを提供したい。",
+  body: "サービスの品質にこだわり、あなたと共に価値あるものを作り上げます。",
+  image: "/images/top.jpg",
   elId: "top-section",
 };
 

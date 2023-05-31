@@ -10,14 +10,14 @@ const ProfileSection = () => {
       <SectionBox id={profileSection.elId}>
         <SectionTitle>{profileSection.title}</SectionTitle>
         <Grid container>
-          <Grid xs={12} sm={5} item display="flex" justifyContent="center">
+          <Grid xs={12} md={5} item display="flex" justifyContent="center">
             <Avatar
               src={profileSection.avator}
               sx={{ height: "auto", width: "calc(80px + 20vw)" }}
             />
           </Grid>
-          <Grid item xs={12} sm={7}>
-            <Typography textAlign="justify" m={1} p={1}>
+          <Grid item xs={12} md={7}>
+            <Typography textAlign="justify" m={1} p={1} whiteSpace="pre-wrap">
               {profileSection.body}
             </Typography>
           </Grid>
