@@ -51,7 +51,7 @@ const backendSkills = {
   header: commonHead,
   skills: [
     ["PHP/Laravel", <Rating value={3} />],
-    ["Python", <Rating value={2} />],
+    ["Python", <Rating value={3} />],
     ["RDBS", <Rating value={2} />],
     ["NoSQL", <Rating value={1} />],
   ],
@@ -85,7 +85,7 @@ const infraSkills = {
 const certification = {
   title: "資格",
   titleIcon: <CardMembershipIcon />,
-  subheader: `現在は"AWS Certified Security - Specialty"を学習中です。`,
+  subheader: `次回は"AWS Certified Solutions Architect - Professional"を習得しようと考えてます。`,
   skills: [
     ["Linuc レベル 1"],
     ["AWS Certified Solutions Architect Associate"],
